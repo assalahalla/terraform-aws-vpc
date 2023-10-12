@@ -24,7 +24,7 @@ module "route-table" {
 module "subnet" {
     source = "./module/subnet"
     vpc_id = module.vpc.vpc_id
-    subnet_cidr_block = var.subnet_cidr_block
+    cidr_block = var.subnet_cidr_block
 }
 
 
